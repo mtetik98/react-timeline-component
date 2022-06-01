@@ -1,6 +1,5 @@
 const webpack = require("webpack");
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     mode: "production",
@@ -32,9 +31,6 @@ module.exports = {
         publicPath: "/",
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname, "src", "index.html"),
-        }),
         new webpack.ProvidePlugin({
             process: "process/browser",
         }),

@@ -41,13 +41,12 @@
         "webpack": "^5.72.1",
         "webpack-bundle-analyzer": "^4.5.0",
         "webpack-cli": "^4.9.2",
-        "react-icons": "^4.4.0"
-    },
-    "dependencies": {
+        "react-icons": "^4.4.0",
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
         "react-scripts": "^5.0.1"
     },
+    "dependencies": {},
     "peerDependencies": {
         "react": "^18.1.0",
         "react-dom": "^18.1.0"
@@ -55,7 +54,7 @@
     "files": [
         "./dist"
     ],
-    "src": "src/index.tsx",
+    "src": "src/index.jsx",
     "main": "dist/index.js",
     "types": "dist/index.d.ts"
 }

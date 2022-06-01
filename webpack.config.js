@@ -1,12 +1,11 @@
 const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
     mode: "production",
     entry: {
-        app: path.join(__dirname, "src", "index.tsx"),
+        app: path.join(__dirname, "demo", "index.tsx"),
     },
     // target: "web",
     resolve: {
@@ -21,7 +20,7 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                include: path.resolve(__dirname, "src"),
+                include: path.resolve(__dirname, "demo"),
                 use: ["style-loader", "css-loader", "postcss-loader"],
             },
         ],
@@ -34,9 +33,8 @@ module.exports = {
         publicPath: "/",
     },
     plugins: [
-        // new BundleAnalyzerPlugin(),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, "src", "index.html"),
+            template: path.join(__dirname, "demo", "index.html"),
         }),
         new webpack.ProvidePlugin({
             process: "process/browser",
