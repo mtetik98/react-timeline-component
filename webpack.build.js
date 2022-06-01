@@ -27,7 +27,7 @@ module.exports = {
         filename: "index.js",
         path: path.resolve(__dirname, "dist"),
         libraryTarget: "umd",
-        library: "react-timeline-component",
+        library: "react-tailwind-timeline-component",
         publicPath: "/",
     },
     plugins: [

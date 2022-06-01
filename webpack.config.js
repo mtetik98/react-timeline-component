@@ -3,11 +3,10 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    mode: "production",
+    mode: "development",
     entry: {
         app: path.join(__dirname, "demo", "index.tsx"),
     },
-    // target: "web",
     resolve: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
     },
@@ -19,8 +18,7 @@ module.exports = {
                 exclude: "/node_modules/",
             },
             {
-                test: /\.css$/i,
-                include: path.resolve(__dirname, "demo"),
+                test: /\.css$/,
                 use: ["style-loader", "css-loader", "postcss-loader"],
             },
         ],
