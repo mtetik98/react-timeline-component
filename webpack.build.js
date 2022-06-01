@@ -8,7 +8,6 @@ module.exports = {
     entry: {
         app: path.join(__dirname, "src", "index.tsx"),
     },
-    // target: "web",
     resolve: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
     },
@@ -34,7 +33,7 @@ module.exports = {
         publicPath: "/",
     },
     plugins: [
-        new BundleAnalyzerPlugin(),
+        // new BundleAnalyzerPlugin(),
         new HtmlWebpackPlugin({
             template: path.join(__dirname, "src", "index.html"),
         }),
