@@ -1,6 +1,6 @@
 {
     "name": "react-tailwind-timeline-component",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Highly customizable React Timeline component",
     "scripts": {
         "start": "webpack-dev-server --mode development --config ./webpack.config.js",
