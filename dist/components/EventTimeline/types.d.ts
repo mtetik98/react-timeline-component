@@ -4,8 +4,9 @@ export declare type EventTimelineProps = {
     description: string;
     icon: ReactNode;
     date?: Date;
-    onIconClick?: () => void;
     className?: string;
+    showLine?: boolean;
+    showIcon?: boolean;
     leftSideContent?: string | ReactNode;
     leftSideContentClassName?: string;
     rightSideContent?: string | ReactNode;
@@ -15,4 +16,9 @@ export declare type EventTimelineProps = {
     iconBackgroundClassName?: string;
     cardClassName?: string;
     darkMode?: boolean;
+    onIconClick?: () => void;
+    onTitleClick?: () => void;
+    onCardClick?: () => void;
+    onLeftSideContentClick?: () => void;
+    onRightSideContentClick?: () => void;
 };
