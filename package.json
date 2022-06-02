@@ -1,11 +1,11 @@
 {
     "name": "react-tailwind-timeline-component",
-    "version": "1.0.6",
+    "version": "1.1.0",
     "description": "Highly customizable React Timeline component",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
     "scripts": {
-        "start": "webpack-dev-server --mode development --config ./webpack.config.js",
-        "build": "npm run clean && webpack --mode production --config ./webpack.build.js",
-        "clean": "rimraf dist"
+        "build": "rollup -c"
     },
     "author": {
         "name": "Mehmet Tetik",
@@ -29,29 +29,23 @@
     },
     "homepage": "https://github.com/mtetik98/react-timeline-component",
     "devDependencies": {
-        "@types/react": "^18.0.9",
-        "@types/react-dom": "^18.0.5",
-        "@types/webpack": "^5.28.0",
+        "@babel/core": "^7.18.2",
+        "@babel/preset-react": "^7.17.12",
+        "@rollup/plugin-node-resolve": "^13.3.0",
         "autoprefixer": "^10.4.7",
-        "html-webpack-plugin": "^5.5.0",
-        "mini-css-extract-plugin": "^2.6.0",
+        "babel-loader": "^8.2.5",
         "postcss": "^8.4.14",
-        "process": "^0.11.10",
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
-        "react-icons": "^4.4.0",
-        "react-scripts": "^5.0.1",
-        "tailwindcss": "^3.0.24",
-        "ts-loader": "^9.3.0",
-        "typescript": "^4.7.2",
-        "webpack": "^5.72.1",
-        "webpack-bundle-analyzer": "^4.5.0",
-        "webpack-cli": "^4.9.2"
+        "rollup": "^2.75.5",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^4.0.2",
+        "rollup-plugin-terser": "^7.0.2",
+        "tailwindcss": "^3.0.24"
     },
-    "files": [
-        "./dist"
-    ],
-    "src": "src/index.tsx",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts"
+    "peerDependencies": {
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0"
+    }
 }
