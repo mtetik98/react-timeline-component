@@ -56,7 +56,7 @@ const EventTimeline: React.FC<EventTimelineProps> = (props) => {
         document.querySelectorAll(".timeline-event-icon svg").forEach((icon) => {
             icon.classList.add(...["h-7", "w-7", "mx-auto"]);
         });
-    }, []);
+    }, [leftSideContent, rightSideContent, icon]);
 
     return (
         <div
