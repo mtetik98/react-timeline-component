@@ -28,7 +28,7 @@ Render a timeline with React and Tailwind CSS in your React project.
 
 ## Install
 ```bash
-npm install react-jupyter-notebook-viewer
+npm install react-tailwind-timeline-component
 ```
 
 ## Usage
