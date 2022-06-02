@@ -1,6 +1,6 @@
 {
     "name": "react-tailwind-timeline-component",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Highly customizable React Timeline component",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
